@@ -1,0 +1,23 @@
+{
+  "name": "eco-globe-website",
+  "version": "1.0.0",
+  "description": "Eco-Globe is a website related to Eco-friendliness. Familiarizing more people with Eco-Friendliness and Its Elements. | HTML5, CSS3. SASS. JS |",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass resources/sass/main.scss resources/css3/style.css -w",
+    "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreasDeveloper/Eco-Globe-Website.git"
+  },
+  "author": "AndreasDEV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreasDeveloper/Eco-Globe-Website/issues"
+  },
+  "homepage": "https://github.com/AndreasDeveloper/Eco-Globe-Website#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
