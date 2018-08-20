@@ -1,0 +1,61 @@
+/* ------------------------------------------- */
+/* ANIMATIONS FOR THE HEADER
+/* ------------------------------------------- */
+
+/* --- ANIMATION FOR HEADER TEXT SETUP | STARTS --- */ 
+@keyframes moveInLeft {
+    /* - WHAT HAPPENS AT THE BEGINNING OF THE ANIMATION - */
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    /* - WHAT HAPPENS AT THE 80% OF THE ANIMATION - */
+    80% {
+        transform: translateX(1.5rem);
+    }
+
+    /* - WHAT HAPPENS AT THE 100% (END) - */
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+/* --- ANIMATION FOR HEADER TEXT SETUP | ENDS --- */ 
+
+/* --- ANIMATION FOR HEADER SUB TEXT SETUP | STARTS --- */ 
+@keyframes moveInRight {
+    /* - WHAT HAPPENS AT THE BEGINNING OF THE ANIMATION - */
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    /* - WHAT HAPPENS AT THE 80% OF THE ANIMATION - */
+    80% {
+        transform: translateX(-1.5rem);
+    }
+
+    /* - WHAT HAPPENS AT THE 100% (END) - */
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+/* --- ANIMATION FOR HEADER SUB TEXT SETUP | ENDS --- */ 
+
+/* --- ANIMATION FOR HEADER BUTTON SETUP | STARTS --- */ 
+        @keyframes moveInBottom {
+            /* - WHAT HAPPENS AT THE BEGINNING OF THE ANIMATION - */
+            0% {
+                opacity: 0;
+                transform: translateY(5rem);
+            }
+        
+            /* - WHAT HAPPENS AT THE 100% (END) - */
+            100% {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+/* --- ANIMATION FOR HEADER BUTTON SETUP | ENDS --- */ 
