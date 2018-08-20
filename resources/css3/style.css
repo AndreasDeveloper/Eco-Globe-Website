@@ -214,6 +214,60 @@ body {
 
 /* --- ANIMATION FOR HEADER BUTTON SETUP | ENDS --- */
 /* - COMPONENTS FOLDER FILES - */
+/* ------------------------------------------- */
+/* BUTTON WHITE | HEADER
+/* ------------------------------------------- */
+/* BUTTON WHITE NESTING */
+.btn {
+  /* BUTTON ON HOVER NESTING */
+  /* BUTTON WHITE NESTING */
+  /* BUTTON WHITE FADE ANIMATION */ }
+  .btn, .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 1.6rem;
+    /* CHANGE FOR THE <button> element */
+    border: none;
+    cursor: pointer; }
+  .btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
+  .btn:active, .btn:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn--white {
+    background-color: #fff;
+    color: #777; }
+    .btn--white::after {
+      background-color: #fff; }
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s; }
+  .btn--animated-1 {
+    /* -- ANIMATION IMPLEMENTATION -- */
+    animation-name: moveInBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: .75s;
+    animation-fill-mode: backwards; }
+
 /* - LAYOUT FOLDER FILES - */
 /* ------------------------------------------- */
 /* CUSTOM GRID FLOAT SYSTEM
@@ -262,8 +316,8 @@ body {
 /* HEADER
 /* ------------------------------------------- */
 .header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(84, 217, 140, 0.5), rgba(40, 176, 98, 0.5)), url(../images/nature-5.jpeg);
+  height: 99vh;
+  background-image: linear-gradient(to right bottom, rgba(84, 217, 140, 0.6), rgba(40, 176, 98, 0.6)), url(../images/nature-6.jpeg);
   background-size: cover;
   background-position: top;
   -webkit-clip-path: polygon(50% 0, 100% 0, 100% 79%, 50% 100%, 0 83%, 0 0);
@@ -271,14 +325,14 @@ body {
   position: relative; }
   .header__logo-box {
     position: absolute;
-    top: 4rem;
-    left: 4rem; }
+    top: 6.5rem;
+    right: 73rem; }
   @media (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header__logo {
-    height: 3.5rem; }
+    height: 8rem; }
   .header__text-box {
     position: absolute;
     top: 40%;

@@ -3,8 +3,8 @@
 /* ------------------------------------------- */
 
 .header {
-    height: 95vh;
-    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.500), rgba($color-primary-dark, 0.500)) ,url(../images/nature-5.jpeg);
+    height: 99vh;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.600), rgba($color-primary-dark, 0.600)) ,url(../images/nature-6.jpeg);
     background-size: cover;
     background-position: top;
     -webkit-clip-path: polygon(50% 0, 100% 0, 100% 79%, 50% 100%, 0 83%, 0 0);
@@ -13,8 +13,9 @@
 
     &__logo-box {
         position: absolute;
-        top: 4rem;
-        left: 4rem;
+        top: 6.5rem;
+
+        right: 73rem;
     }
 
     // * --- MEDIA QUERIES --- * \\
@@ -24,7 +25,7 @@
     }
 
     &__logo {
-        height: 3.5rem;
+        height: 8rem;
     }
     
     &__text-box {
