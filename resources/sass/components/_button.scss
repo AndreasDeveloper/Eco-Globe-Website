@@ -72,3 +72,41 @@
     animation-fill-mode: backwards;
     }
 }
+
+/* ------------------------------------------- */
+/* BUTTON TEXT | 
+/* ------------------------------------------- */
+
+.btn-text {
+
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary;
+        padding: 3px;
+        transition: all .2s;
+        position: relative;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+
+    // * --- MEDIA QUERIES --- * \\
+    @include respond(phone) {
+        position: absolute;
+        top: 0;
+        left: 9.5rem;
+    }
+}

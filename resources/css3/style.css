@@ -81,6 +81,12 @@ Dark green: #28b062
 /* ---------------------------------------------------------- */
 /* U-MARGIN-TOP-BIG CLASS IN TOURS SECTION | POSITION THE TEXT
 /* ---------------------------------------------------------- */
+.u-margin-top-medium {
+  margin-top: 5rem !important; }
+
+/* ---------------------------------------------------------- */
+/* U-MARGIN-TOP-BIG CLASS IN TOURS SECTION | POSITION THE TEXT
+/* ---------------------------------------------------------- */
 .u-margin-top-big {
   margin-top: 8rem !important; }
 
@@ -308,6 +314,64 @@ body {
     animation-delay: .75s;
     animation-fill-mode: backwards; }
 
+/* ------------------------------------------- */
+/* BUTTON TEXT | 
+/* ------------------------------------------- */
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #2ecc71;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #2ecc71;
+  padding: 3px;
+  transition: all .2s;
+  position: relative; }
+
+.btn-text:hover {
+  background-color: #2ecc71;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
+@media (max-width: 37.5em) {
+  .btn-text {
+    position: absolute;
+    top: 0;
+    left: 9.5rem; } }
+
+/* ------------------------------------------- */
+/* FEATURE-BOX | SECTION FEATURES BOXES
+/* ------------------------------------------- */
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #54d98c, #28b062);
+    -webkit-background-clip: text;
+    color: transparent;
+    /*letter-spacing: .2rem;
+        transition: all .2s; */ }
+    @media (max-width: 56.25em) {
+      .feature-box__icon {
+        margin-bottom: 0; } }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+  @media (max-width: 56.25em) {
+    .feature-box {
+      padding: 2rem; } }
+
 /* - LAYOUT FOLDER FILES - */
 /* ------------------------------------------- */
 /* CUSTOM GRID FLOAT SYSTEM
@@ -431,6 +495,46 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+  .section-about__header-3 {
+    text-align: center; }
+  .section-about__paragraph {
+    text-align: center;
+    font-size: 1.7rem; }
+  .section-about__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .section-about__button:hover {
+      background-color: #2ecc71;
+      color: #fff;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+      transform: translate(-50%, -50%); }
+    .section-about__button:active {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      transform: translateY(0);
+      transform: translate(-50%, -50%); }
   @media (max-width: 56.25em) {
     .section-about {
       padding: 20rem 0; } }
+
+/* ------------------------------------------- */
+/* SECTION FEATURES | IN HOME PAGE
+/* ------------------------------------------- */
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(84, 217, 140, 0.8), rgba(40, 176, 98, 0.8)), url(../images/nature-3.jpeg);
+  background-size: cover;
+  margin-top: -20rem;
+  /*-webkit-clip-path: polygon(51% 11%, 100% 2%, 100% 75%, 50% 100%, 0% 75%, 0 22%);
+    clip-path: polygon(51% 11%, 100% 2%, 100% 75%, 50% 100%, 0% 75%, 0 22%); */
+  /*@media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {   // and (min-width: 600px) is the breakpoint set which will display the content below. Everything above 600px will be applied in the content below \\
+        background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.800), rgba($color-primary-dark, 0.800)) ,url(../images/nat-4.jpg);
+    }*/
+  transform: skewY(-7deg); }
+  .section-features > * {
+    transform: skewY(7deg); }
+  @media (max-width: 56.25em) {
+    .section-features {
+      padding: 10rem 0; } }
