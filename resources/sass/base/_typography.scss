@@ -54,3 +54,58 @@ body {
         }
     }
 }
+
+/* ------------------------------------------- */
+/* HEADING SECONDARY | TEXT / STYLE H2
+/* ------------------------------------------- */
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    // SETUP THE TEXT (h2) TO DISPLAY WITH MULTIPLE COLORS IN THE BACKGROUND \\
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    /*letter-spacing: .2rem;
+    transition: all .2s; */ // UNCOMMENT FOR ANIMATION EFFECT
+
+    /*
+    &:hover {
+        transform: skewY(2deg);
+    } */ // UNCOMMENT FOR ANIMATION EFFECT
+
+        // * --- MEDIA QUERIES --- * \\
+        @include respond(tab-port) {
+            font-size: 3rem;
+        }
+    
+        @include respond(phone) {
+            font-size: 2.5rem;
+        }
+    }
+
+/* --------------------------------------------- */
+/* HEADING TERTIARY + PARAGRAPH| TEXT / STYLE H3/P
+/* --------------------------------------------- */
+
+.heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    // * --- MEDIA QUERIES --- * \\
+    @include respond(phone) {
+        text-align: center;
+    }
+}
+
+.paragraph {
+    font-size: 1.6rem;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
