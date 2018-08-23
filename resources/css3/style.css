@@ -390,14 +390,13 @@ body {
   overflow: hidden;
   position: relative;
   z-index: 1000; }
+  @media (max-width: 37.5em) {
+    .section-container-1 {
+      padding-bottom: 100rem; } }
   .section-container-1__text {
     padding-right: 5rem;
     padding-left: 5rem;
     padding-top: 25rem; }
-    @media (max-width: 56.25em) {
-      .section-container-1__text {
-        padding-top: 20rem;
-        padding-bottom: 15rem; } }
   .section-container-1__header-1 {
     font-size: 1.8rem;
     text-align: center; }
@@ -431,6 +430,9 @@ body {
   overflow: hidden;
   position: relative;
   z-index: 500; }
+  @media (max-width: 37.5em) {
+    .section-container-2 {
+      padding-bottom: 100rem; } }
   .section-container-2__text {
     padding-right: 5rem;
     padding-left: 5rem;
@@ -472,6 +474,9 @@ body {
   overflow: hidden;
   position: relative;
   z-index: 400; }
+  @media (max-width: 37.5em) {
+    .section-container-3 {
+      padding-bottom: 100rem; } }
   .section-container-3__text {
     padding-right: 5rem;
     padding-left: 5rem;
@@ -513,6 +518,9 @@ body {
   overflow: hidden;
   position: relative;
   z-index: 300; }
+  @media (max-width: 37.5em) {
+    .section-container-4 {
+      padding-bottom: 100rem; } }
   .section-container-4__text {
     padding-right: 5rem;
     padding-left: 5rem;

@@ -16,16 +16,15 @@
     position: relative;
     z-index: 1000;
 
+    // * --- MEDIA QUERIES --- * \\
+    @include respond(phone) {
+        padding-bottom: 100rem;
+    }
+
     &__text {
         padding-right: 5rem;
         padding-left: 5rem;
         padding-top: 25rem;
-
-        // * --- MEDIA QUERIES --- * \\
-        @include respond(tab-port) {
-            padding-top: 20rem;
-            padding-bottom: 15rem;
-        }
     }
 
     &__header-1 {
@@ -56,6 +55,11 @@
     overflow: hidden;
     position: relative;
     z-index: 500;
+
+     // * --- MEDIA QUERIES --- * \\
+     @include respond(phone) {
+        padding-bottom: 100rem;
+    }
 
     &__text {
         padding-right: 5rem;
@@ -98,6 +102,11 @@
     position: relative;
     z-index: 400;
 
+     // * --- MEDIA QUERIES --- * \\
+     @include respond(phone) {
+        padding-bottom: 100rem;
+    }
+
     &__text {
         padding-right: 5rem;
         padding-left: 5rem;
@@ -138,6 +147,11 @@
     overflow: hidden;
     position: relative;
     z-index: 300;
+
+     // * --- MEDIA QUERIES --- * \\
+     @include respond(phone) {
+        padding-bottom: 100rem;
+    }
 
     &__text {
         padding-right: 5rem;
