@@ -80,6 +80,10 @@
         @media (max-width: 75em) { @content };    // 1200px
     }
 
+    @if $breakpoint == small-desktop {
+        @media (min-width: 86.375em)   { @content };   // 1382px
+    }
+
     @if $breakpoint == big-desktop {
         @media (min-width: 112.5em) { @content };    // 1800px + | min-width > If the size is more than 1800px, content in it will apply, if its less, content in it won't apply
     }

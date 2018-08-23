@@ -7,6 +7,8 @@
     background-image: linear-gradient(to right bottom, rgba($color-white, 0.700), rgba($color-white, 0.700)) ,url(../images/w-turbine-3.jpeg);    
     background-size: cover;
     background-attachment: fixed;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
     width: 100%;
     height: 90vh;
     margin-top: -50rem;
@@ -18,6 +20,12 @@
         padding-right: 5rem;
         padding-left: 5rem;
         padding-top: 25rem;
+
+        // * --- MEDIA QUERIES --- * \\
+        @include respond(tab-port) {
+            padding-top: 20rem;
+            padding-bottom: 15rem;
+        }
     }
 
     &__header-1 {
@@ -40,6 +48,8 @@
     background-image: linear-gradient(to right bottom, rgba($color-white, 0.700), rgba($color-white, 0.700)) ,url(../images/ocean-1.jpeg);
     background-size: cover;
     background-attachment: fixed;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
     width: 100%;
     height: 90vh;
     margin-top: -20rem;
@@ -51,6 +61,12 @@
         padding-right: 5rem;
         padding-left: 5rem;
         padding-top: 30rem;
+
+        // * --- MEDIA QUERIES --- * \\
+        @include respond(tab-port) {
+            padding-top: 20rem;
+            padding-bottom: 15rem;
+        }
     }
 
     &__header-2 {
@@ -73,6 +89,8 @@
     background-image: linear-gradient(to right bottom, rgba($color-white, 0.700), rgba($color-white, 0.700)) ,url(../images/pp-3.jpeg);
     background-size: cover;
     background-attachment: fixed;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
     width: 100%;
     height: 90vh;
     margin-top: -20rem;
@@ -84,6 +102,12 @@
         padding-right: 5rem;
         padding-left: 5rem;
         padding-top: 30rem;
+
+        // * --- MEDIA QUERIES --- * \\
+        @include respond(tab-port) {
+            padding-top: 20rem;
+            padding-bottom: 25rem;
+        }
     }
 
     &__header-3 {
@@ -106,6 +130,8 @@
     background-image: linear-gradient(to right bottom, rgba($color-white, 0.700), rgba($color-white, 0.700)) ,url(../images/nature-9.jpeg);
     background-size: cover;
     background-attachment: fixed;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
     width: 100%;
     height: 90vh;
     margin-top: -20rem;
@@ -117,6 +143,12 @@
         padding-right: 5rem;
         padding-left: 5rem;
         padding-top: 30rem;
+
+        // * --- MEDIA QUERIES --- * \\
+        @include respond(tab-port) {
+            padding-top: 20rem;
+            padding-bottom: 15rem;
+        }
     }
 
     &__header-4 {

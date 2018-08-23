@@ -4,12 +4,26 @@
 
 .header {
     height: 98vh;
-    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.600), rgba($color-primary-dark, 0.600)) ,url(../images/header-4.jpeg);
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.600), rgba($color-primary-dark, 0.600)) ,url(../images/header-4.jpg);
     background-size: cover;
     background-position: top;
     -webkit-clip-path: polygon(50% 0, 100% 0, 100% 79%, 50% 100%, 0 83%, 0 0);
     clip-path: polygon(50% 0, 100% 0, 100% 79%, 50% 100%, 0 83%, 0 0);  
     position: relative;
+
+    // IMPLEMENTING CLIP PATH PROPERTY TO WORK ON OLDER VERSION OF MOZILLA FIREFOX \\
+    @supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(50% 0, 100% 0, 100% 79%, 50% 100%, 0 83%, 0 0);
+        clip-path: polygon(50% 0, 100% 0, 100% 79%, 50% 100%, 0 83%, 0 0);  
+        height: 95vh;
+    }
+
+    // * --- MEDIA QUERIES FOR MAKING PICTURES RESPONSIVE --- * \\
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), 
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),  // SAFARI SUPPORT IMPLEMENTATION
+        only screen and (min-width: 125em) {   // and (min-width: 600px) is the breakpoint set which will display the content below. Everything above 600px will be applied in the content below \\
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.600), rgba($color-primary-dark, 0.600)) ,url(../images/header-4-small.jpg);
+        }
 
     &__logo-box {
         position: absolute;
