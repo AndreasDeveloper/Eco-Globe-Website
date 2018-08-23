@@ -19,6 +19,31 @@
     transform: translate(-50%, -50%);
 }
 
+
+/* ------------------------------------------- */
+/* CENTERS THE BUTTONS
+/* ------------------------------------------- */
+@mixin button-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+        transform: translate(-50%, -50%);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+        transform: translate(-50%, -50%);
+        }
+}
+
 /* ------------------------------------------- */
 /* MEDIA QUERY MANAGER
 /* ------------------------------------------- */

@@ -29,6 +29,9 @@ Dark green: #28b062
 /* MIXIN THAT CENTERS THE ELEMENTS TO VH
 /* ------------------------------------------- */
 /* ------------------------------------------- */
+/* CENTERS THE BUTTONS
+/* ------------------------------------------- */
+/* ------------------------------------------- */
 /* MEDIA QUERY MANAGER
 /* ------------------------------------------- */
 /* // SIZES / DEVICES \\
@@ -372,6 +375,293 @@ body {
     .feature-box {
       padding: 2rem; } }
 
+/* ------------------------------------------- */
+/* CONTAINER COMPONENT | SECTION SECTIONS
+/* ------------------------------------------- */
+.section-sections__container-1 {
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/w-turbine-3.jpeg);
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  margin-top: -50rem;
+  overflow: hidden; }
+
+.section-sections__text {
+  padding-right: 5rem;
+  padding-left: 5rem;
+  padding-top: 25rem; }
+
+.section-sections__header-1 {
+  font-size: 1.8rem;
+  text-align: center; }
+
+.section-sections__paragraph-1 {
+  text-align: center; }
+
+.section-sections__button-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .section-sections__button-1:hover {
+    background-color: #2ecc71;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    transform: translate(-50%, -50%); }
+  .section-sections__button-1:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0);
+    transform: translate(-50%, -50%); }
+
+.section-sections__container-2 {
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/ocean-1.jpeg);
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  margin-top: -10rem;
+  overflow: hidden; }
+
+.section-sections__text-2 {
+  padding-right: 5rem;
+  padding-left: 5rem;
+  padding-top: 10rem; }
+
+.section-sections__header-2 {
+  font-size: 1.8rem;
+  text-align: center; }
+
+.section-sections__paragraph-2 {
+  text-align: center; }
+
+.section-sections__button-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .section-sections__button-2:hover {
+    background-color: #2ecc71;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    transform: translate(-50%, -50%); }
+  .section-sections__button-2:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0);
+    transform: translate(-50%, -50%); }
+
+.section-sections__container-3 {
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/pp-3.jpeg);
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  margin-top: -10rem;
+  overflow: hidden; }
+
+.section-sections__text-2 {
+  padding-right: 5rem;
+  padding-left: 5rem;
+  padding-top: 10rem; }
+
+.section-sections__header-3 {
+  font-size: 1.8rem;
+  text-align: center; }
+
+.section-sections__paragraph-3 {
+  text-align: center; }
+
+.section-sections__button-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .section-sections__button-3:hover {
+    background-color: #2ecc71;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    transform: translate(-50%, -50%); }
+  .section-sections__button-3:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0);
+    transform: translate(-50%, -50%); }
+
+.section-sections__container-4 {
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/header-3.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  margin-top: -10rem;
+  overflow: hidden; }
+
+.section-sections__text-2 {
+  padding-right: 5rem;
+  padding-left: 5rem;
+  padding-top: 15rem; }
+
+.section-sections__header-4 {
+  font-size: 1.8rem;
+  text-align: center; }
+
+.section-sections__paragraph-4 {
+  text-align: center; }
+
+.section-sections__button-4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .section-sections__button-4:hover {
+    background-color: #2ecc71;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    transform: translate(-50%, -50%); }
+  .section-sections__button-4:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0);
+    transform: translate(-50%, -50%); }
+
+.section-container-1 {
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/w-turbine-3.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 90vh;
+  margin-top: -50rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 1000; }
+  .section-container-1__text {
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-top: 25rem; }
+  .section-container-1__header-1 {
+    font-size: 1.8rem;
+    text-align: center; }
+  .section-container-1__paragraph-1 {
+    text-align: center; }
+  .section-container-1__button-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .section-container-1__button-1:hover {
+      background-color: #2ecc71;
+      color: #fff;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+      transform: translate(-50%, -50%); }
+    .section-container-1__button-1:active {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      transform: translateY(0);
+      transform: translate(-50%, -50%); }
+
+.section-container-2 {
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/ocean-1.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 90vh;
+  margin-top: -20rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 500; }
+  .section-container-2__text {
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-top: 30rem; }
+  .section-container-2__header-2 {
+    font-size: 1.8rem;
+    text-align: center; }
+  .section-container-2__paragraph-2 {
+    text-align: center; }
+  .section-container-2__button-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .section-container-2__button-2:hover {
+      background-color: #2ecc71;
+      color: #fff;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+      transform: translate(-50%, -50%); }
+    .section-container-2__button-2:active {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      transform: translateY(0);
+      transform: translate(-50%, -50%); }
+
+.section-container-3 {
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/pp-3.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 90vh;
+  margin-top: -20rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 400; }
+  .section-container-3__text {
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-top: 30rem; }
+  .section-container-3__header-3 {
+    font-size: 1.8rem;
+    text-align: center; }
+  .section-container-3__paragraph-3 {
+    text-align: center; }
+  .section-container-3__button-3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .section-container-3__button-3:hover {
+      background-color: #2ecc71;
+      color: #fff;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+      transform: translate(-50%, -50%); }
+    .section-container-3__button-3:active {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      transform: translateY(0);
+      transform: translate(-50%, -50%); }
+
+.section-container-4 {
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/nature-9.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 90vh;
+  margin-top: -20rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 300; }
+  .section-container-4__text {
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-top: 30rem; }
+  .section-container-4__header-4 {
+    font-size: 1.8rem;
+    text-align: center; }
+  .section-container-4__paragraph-4 {
+    text-align: center; }
+  .section-container-4__button-4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .section-container-4__button-4:hover {
+      background-color: #2ecc71;
+      color: #fff;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+      transform: translate(-50%, -50%); }
+    .section-container-4__button-4:active {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      transform: translateY(0);
+      transform: translate(-50%, -50%); }
+
 /* - LAYOUT FOLDER FILES - */
 /* ------------------------------------------- */
 /* CUSTOM GRID FLOAT SYSTEM
@@ -447,45 +737,44 @@ body {
 /* ------------------------------------------- */
 /* NAVIGATION
 /* ------------------------------------------- */
-.navigation__list {
-  float: right;
-  list-style: none; }
-
-.navigation__item {
-  display: inline-block;
-  margin-top: 6.5rem;
-  margin-left: 6rem;
-  margin-right: 6rem; }
-
-.navigation__anchor:link, .navigation__anchor:visited {
-  position: relative;
-  padding: .8rem 0;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  border-bottom: .2rem solid transparent;
-  -webkit-transition: border-bottom 0.2s;
-  transition: border-bottom 0.2s; }
-  .navigation__anchor:link:hover, .navigation__anchor:link:active, .navigation__anchor:visited:hover, .navigation__anchor:visited:active {
-    border-bottom: 0.2rem solid #2ecc71; }
-
-.navigation__anchor--left {
-  position: absolute;
-  right: 18rem; }
-
-.navigation__anchor--right {
-  position: absolute;
-  left: 12rem; }
-
-.navigation__logo {
-  position: absolute;
-  height: 7rem;
-  top: 6%;
-  left: 45%; }
-
-.navigation__special-e {
-  text-transform: none; }
+.navigation {
+  position: relative; }
+  .navigation__list {
+    float: right;
+    list-style: none; }
+  .navigation__item {
+    display: inline-block;
+    margin-top: 6.5rem;
+    margin-left: 6rem;
+    margin-right: 6rem; }
+  .navigation__anchor:link, .navigation__anchor:visited {
+    position: relative;
+    padding: .8rem 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    border-bottom: .2rem solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s; }
+    .navigation__anchor:link:hover, .navigation__anchor:link:active, .navigation__anchor:visited:hover, .navigation__anchor:visited:active {
+      border-bottom: 0.2rem solid #2ecc71; }
+  .navigation__anchor--left {
+    position: absolute;
+    right: 18rem; }
+  .navigation__anchor--right {
+    position: absolute;
+    left: 12rem; }
+  .navigation__logo {
+    position: absolute;
+    height: 7rem;
+    top: 50%;
+    left: 45%;
+    transition: all .2s; }
+    .navigation__logo:hover {
+      top: 3.5rem; }
+  .navigation__special-e {
+    text-transform: none; }
 
 /* - PAGES FOLDER FILES - */
 /* ------------------------------------------- */
@@ -527,14 +816,29 @@ body {
   background-image: linear-gradient(to right bottom, rgba(84, 217, 140, 0.8), rgba(40, 176, 98, 0.8)), url(../images/nature-3.jpeg);
   background-size: cover;
   margin-top: -20rem;
+  padding-bottom: 20rem;
+  position: relative;
+  z-index: 2000;
   /*-webkit-clip-path: polygon(51% 11%, 100% 2%, 100% 75%, 50% 100%, 0% 75%, 0 22%);
     clip-path: polygon(51% 11%, 100% 2%, 100% 75%, 50% 100%, 0% 75%, 0 22%); */
   /*@media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {   // and (min-width: 600px) is the breakpoint set which will display the content below. Everything above 600px will be applied in the content below \\
         background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.800), rgba($color-primary-dark, 0.800)) ,url(../images/nat-4.jpg);
     }*/
-  transform: skewY(-7deg); }
-  .section-features > * {
-    transform: skewY(7deg); }
+  -webkit-clip-path: polygon(50% 0, 100% 0, 100% 79%, 50% 100%, 0 83%, 0 0);
+  clip-path: polygon(50% 0, 100% 0, 100% 79%, 50% 100%, 0 83%, 0 0); }
   @media (max-width: 56.25em) {
     .section-features {
       padding: 10rem 0; } }
+  @media (max-width: 56.25em) {
+    .section-features {
+      transform: skewY(-7deg);
+      clip-path: none; }
+      .section-features > * {
+        transform: skewY(7deg); } }
+
+/* ------------------------------------------- */
+/* SECTION FEATURES | IN HOME PAGE
+/* ------------------------------------------- */
+.section-sections {
+  background-color: #f7f7f7;
+  margin-top: -20vh; }
