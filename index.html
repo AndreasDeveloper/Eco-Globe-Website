@@ -8,7 +8,6 @@
         <meta name="description" content="We are Eco-Globe. Team that is introducing eco-friendliness to people in a right and simple way.">
 
         <!-- LINKS / FILES -->
-        <link rel="stylesheet" type="text/css" href="resources/css3/icons/icon-font.css">
         <link rel="stylesheet" type="text/css" href="resources/css3/style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 
@@ -16,24 +15,25 @@
         <title>Eco-Globe</title>
     </head>
     <body>
+
+        <!-- NAVIGATION SETUP STARTS -->
+        <nav class="navigation">
+                <div class="row">
+                    <img src="resources/images/logo-white.png" alt="Eco-Globe Logo" class="navigation__logo">
+                        <ul class="navigation__list">
+                            <li class="navigation__item"><a class="navigation__anchor navigation__anchor--left" href="#">About</a></li>
+                            <li class="navigation__item"><a class="navigation__anchor navigation__anchor--left" href="#">Cards</a></li>
+                            <li class="navigation__item"><a class="navigation__anchor navigation__anchor--left" href="#">Sections</a></li>
+                            <li class="navigation__item"><a class="navigation__anchor navigation__anchor--right" href="#">Media</a></li>
+                            <li class="navigation__item"><a class="navigation__anchor navigation__anchor--right" href="#">Partners</a></li>
+                            <li class="navigation__item"><a class="navigation__anchor navigation__anchor--right" href="#">B<span class="navigation__special-e">e</span>Eco</a></li>
+                        </ul>
+                </div>
+            </nav>
+            <!-- NAVIGATION SETUP ENDS -->
+
         <!-- HEADER STARTS -->
         <header class="header">
-            <!-- NAVIGATION SETUP STARTS -->
-                <nav class="navigation">
-                    <div class="row">
-                        <img src="resources/images/logo-white.png" alt="Eco-Globe Logo" class="navigation__logo">
-                            <ul class="navigation__list">
-                                <li class="navigation__item"><a class="navigation__anchor navigation__anchor--left" href="#">About</a></li>
-                                <li class="navigation__item"><a class="navigation__anchor navigation__anchor--left" href="#">Cards</a></li>
-                                <li class="navigation__item"><a class="navigation__anchor navigation__anchor--left" href="#">Sections</a></li>
-                                <li class="navigation__item"><a class="navigation__anchor navigation__anchor--right" href="#">Media</a></li>
-                                <li class="navigation__item"><a class="navigation__anchor navigation__anchor--right" href="#">Partners</a></li>
-                                <li class="navigation__item"><a class="navigation__anchor navigation__anchor--right" href="#">B<span class="navigation__special-e">e</span>Eco</a></li>
-                            </ul>
-                    </div>
-                </nav>
-                <!-- NAVIGATION SETUP ENDS -->
-
             <!-- HEADER LOGO SETUP -->
             <div class="header__logo-box">
                <!-- <img src="resources/images/logo-white.png" alt="Eco-Globe Logo" class="header__logo"> -->
@@ -55,7 +55,7 @@
         <!-- MAIN CONTENT -->
         <main>
             <!-- SECTION ABOUT STARTS -->
-            <section class="section-about">
+            <section class="section-about js--section-about">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">About Eco&ndash;Globe</h2>
                 </div>
@@ -238,5 +238,12 @@
         </main>
 
     </body>
+
+    <!-- SCRIPTS / FILES -->
+
+    <!-- JQUERY CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="resources/js/navigation-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 
 </html>

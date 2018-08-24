@@ -6,6 +6,8 @@
     background-color: $color-grey-light-1;
     padding: 25rem 0;
     margin-top: -20vh;
+    position: relative;
+    z-index: 8000;
 
     &__header-3 {
         text-align: center;
@@ -38,7 +40,7 @@
     margin-top: -20rem;
     padding-bottom: 20rem;
     position: relative;
-    z-index: 2000;
+    z-index: 8000;
     /*-webkit-clip-path: polygon(51% 11%, 100% 2%, 100% 75%, 50% 100%, 0% 75%, 0 22%);
     clip-path: polygon(51% 11%, 100% 2%, 100% 75%, 50% 100%, 0% 75%, 0 22%); */
     
@@ -77,6 +79,8 @@
 .section-sections {
     background-color: $color-grey-light-1;
     margin-top: -20vh;
+    position: relative;
+    z-index: 8000;
 
     // * --- MEDIA QUERIES --- * \\
     @include respond(tab-port) {

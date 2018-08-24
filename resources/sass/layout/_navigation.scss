@@ -2,9 +2,105 @@
 /* NAVIGATION
 /* ------------------------------------------- */
 
+// EXPERIMENTAL \\
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+    padding: 1rem 10rem;
+    box-sizing: border-box;
+    transition: .3s;
+    z-index: 9000;
+
+    &__logo {
+        padding-top: 2.2rem;
+        padding-bottom: 2.2rem;
+        padding-left: -50rem;
+        height: 8.5rem;
+        font-size: 2.4rem;
+        transition: .3s;
+
+        &:hover {
+            transform: translateY(-1.5rem) scale(1.03);
+        }
+    }
+
+    &__list {
+        list-style: none;
+        float: right;
+        margin: 0;
+        padding-right: 25rem;
+        display: flex;
+    }
+
+    &__item {
+        list-style: none;
+        font-size: $default-font-size;
+    }
+
+    &__anchor {
+        line-height: 8rem;
+        color: $color-white;
+        padding: 1.2rem 1.8rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-bottom: .2rem solid transparent;
+        -webkit-transition: border-bottom 0.2s;
+        transition: border-bottom .2s;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover,
+        &:active, {
+             border-bottom: .2rem solid $color-primary;     
+        }
+    }
+
+    &__special-e {
+        text-transform: none;
+    }
+}
+
+// NAV BLACK WILL BE ADDED USING JS | JS CONTENT \\
+
+.navigation.scroll {
+    background: linear-gradient(to right bottom, rgba($color-primary-light, 0.700), rgba($color-primary-dark, 0.700));
+    height: 10rem;
+    padding: 1rem 10rem;
+    position: fixed;
+    z-index: 9000;
+}
+
+.navigation.scroll .logo {
+    color: #fff;
+}
+
+.navigation.scroll ul li a {
+    color: #fff;
+    border-bottom: .2rem solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.navigation.scroll ul li a:hover,
+.navigation.scroll ul li a:active {
+    border-bottom: .2rem solid $color-white;     
+}
+// NAV BLACK WILL BE ADDED USING JS | JS CONTENT \\
+
+
+// FIRST VERSION \\
+/*
 .navigation {
 
     position: relative;
+    top: 0;
+    left: 0;
 
     &__list {
         float: right;
@@ -64,3 +160,25 @@
         text-transform: none;
     }
 }
+*/
+/* Sticky Nav */ /*
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    z-index: 9999;
+}
+
+.sticky .navigation li { margin-top: 18px; }
+
+.sticky .navigation li a:link,
+.sticky .navigation li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.sticky .logo { display: none; }
+*/

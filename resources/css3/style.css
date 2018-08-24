@@ -620,7 +620,8 @@ body {
   background-position: top;
   -webkit-clip-path: polygon(50% 0, 100% 0, 100% 79%, 50% 100%, 0 83%, 0 0);
   clip-path: polygon(50% 0, 100% 0, 100% 79%, 50% 100%, 0 83%, 0 0);
-  position: relative; }
+  position: relative;
+  z-index: 8001; }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     .header {
       -webkit-clip-path: polygon(50% 0, 100% 0, 100% 79%, 50% 100%, 0 83%, 0 0);
@@ -641,7 +642,7 @@ body {
     height: 8rem; }
   .header__text-box {
     position: absolute;
-    top: 55%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
@@ -650,44 +651,166 @@ body {
 /* NAVIGATION
 /* ------------------------------------------- */
 .navigation {
-  position: relative; }
-  .navigation__list {
-    float: right;
-    list-style: none; }
-  .navigation__item {
-    display: inline-block;
-    margin-top: 6.5rem;
-    margin-left: 6rem;
-    margin-right: 6rem; }
-  .navigation__anchor:link, .navigation__anchor:visited {
-    position: relative;
-    padding: .8rem 0;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    border-bottom: .2rem solid transparent;
-    -webkit-transition: border-bottom 0.2s;
-    transition: border-bottom 0.2s; }
-    .navigation__anchor:link:hover, .navigation__anchor:link:active, .navigation__anchor:visited:hover, .navigation__anchor:visited:active {
-      border-bottom: 0.2rem solid #2ecc71; }
-  .navigation__anchor--left {
-    position: absolute;
-    right: 18rem; }
-  .navigation__anchor--right {
-    position: absolute;
-    left: 12rem; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  padding: 1rem 10rem;
+  box-sizing: border-box;
+  transition: .3s;
+  z-index: 9000; }
   .navigation__logo {
-    position: absolute;
-    height: 7rem;
-    top: 50%;
-    left: 45%;
-    transition: all .2s; }
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+    padding-left: -50rem;
+    height: 8.5rem;
+    font-size: 2.4rem;
+    transition: .3s; }
     .navigation__logo:hover {
       transform: translateY(-1.5rem) scale(1.03); }
+  .navigation__list {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding-right: 25rem;
+    display: flex; }
+  .navigation__item {
+    list-style: none;
+    font-size: 1.6rem; }
+  .navigation__anchor {
+    line-height: 8rem;
+    color: #fff;
+    padding: 1.2rem 1.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: .2rem solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom .2s; }
+    .navigation__anchor:focus {
+      outline: none; }
+    .navigation__anchor:hover, .navigation__anchor:active {
+      border-bottom: 0.2rem solid #2ecc71; }
   .navigation__special-e {
     text-transform: none; }
 
+.navigation.scroll {
+  background: linear-gradient(to right bottom, rgba(84, 217, 140, 0.7), rgba(40, 176, 98, 0.7));
+  height: 10rem;
+  padding: 1rem 10rem;
+  position: fixed;
+  z-index: 9000; }
+
+.navigation.scroll .logo {
+  color: #fff; }
+
+.navigation.scroll ul li a {
+  color: #fff;
+  border-bottom: .2rem solid transparent;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s; }
+
+.navigation.scroll ul li a:hover,
+.navigation.scroll ul li a:active {
+  border-bottom: 0.2rem solid #fff; }
+
+/* Mobile Nav */
+.mobile-open {
+  color: #fff;
+  font-size: 3rem;
+  float: left;
+  margin: 1em 0 0 1em;
+  display: block;
+  cursor: pointer; }
+
+/*
+.navigation {
+
+    position: relative;
+    top: 0;
+    left: 0;
+
+    &__list {
+        float: right;
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+        margin-top: 6.5rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+    
+    &__anchor {
+        &:link,
+        &:visited {
+            position: relative;
+            padding: .8rem 0;
+            color: $color-white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            border-bottom: .2rem solid transparent;
+            -webkit-transition: border-bottom 0.2s;
+            transition: border-bottom 0.2s;
+
+            &:hover,
+            &:active {
+                 border-bottom: .2rem solid $color-primary;     
+            }
+        }
+
+        &--left {
+            position: absolute;
+            right: 18rem;
+        }
+
+        &--right {
+            position: absolute;
+            left: 12rem; 
+        }
+    }
+
+    &__logo {
+        position: absolute;
+        height: 7rem;
+        top: 50%;
+        left: 45%;
+        transition: all .2s;
+
+        &:hover {
+            transform: translateY(-1.5rem) scale(1.03);
+        }
+    }
+
+    &__special-e {
+        text-transform: none;
+    }
+}
+*/
+/* Sticky Nav */
+/*
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    z-index: 9999;
+}
+
+.sticky .navigation li { margin-top: 18px; }
+
+.sticky .navigation li a:link,
+.sticky .navigation li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.sticky .logo { display: none; }
+*/
 /* - PAGES FOLDER FILES - */
 /* ------------------------------------------- */
 /* SECTION ABOUT | IN HOME PAGE
@@ -695,7 +818,9 @@ body {
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
-  margin-top: -20vh; }
+  margin-top: -20vh;
+  position: relative;
+  z-index: 8000; }
   .section-about__header-3 {
     text-align: center; }
   .section-about__paragraph {
@@ -730,7 +855,7 @@ body {
   margin-top: -20rem;
   padding-bottom: 20rem;
   position: relative;
-  z-index: 2000;
+  z-index: 8000;
   /*-webkit-clip-path: polygon(51% 11%, 100% 2%, 100% 75%, 50% 100%, 0% 75%, 0 22%);
     clip-path: polygon(51% 11%, 100% 2%, 100% 75%, 50% 100%, 0% 75%, 0 22%); */
   /*@media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {   // and (min-width: 600px) is the breakpoint set which will display the content below. Everything above 600px will be applied in the content below \\
@@ -753,7 +878,9 @@ body {
 /* ------------------------------------------- */
 .section-sections {
   background-color: #f7f7f7;
-  margin-top: -20vh; }
+  margin-top: -20vh;
+  position: relative;
+  z-index: 8000; }
   @media (max-width: 56.25em) {
     .section-sections {
       padding: 20rem 0; } }
