@@ -714,15 +714,6 @@ body {
 .navigation.scroll ul li a:active {
   border-bottom: 0.2rem solid #fff; }
 
-/* Mobile Nav */
-.mobile-open {
-  color: #fff;
-  font-size: 3rem;
-  float: left;
-  margin: 1em 0 0 1em;
-  display: block;
-  cursor: pointer; }
-
 /*
 .navigation {
 
