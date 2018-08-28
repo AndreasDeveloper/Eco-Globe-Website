@@ -709,7 +709,8 @@ body {
     max-height: 50em; } }
 
 nav.scroll ul {
-  background-image: linear-gradient(to right bottom, rgba(84, 217, 140, 0.8), rgba(40, 176, 98, 0.8)); }
+  background-image: linear-gradient(to right bottom, rgba(84, 217, 140, 0.8), rgba(40, 176, 98, 0.8));
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25); }
 
 nav ul li {
   display: inline-block;

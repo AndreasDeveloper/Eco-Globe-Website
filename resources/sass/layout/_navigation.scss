@@ -95,6 +95,7 @@
 // JS PART OF THE NAVIGATION. THIS NAV WILL BE ADDED IN JS
 nav.scroll ul {
     background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.800), rgba($color-primary-dark, 0.800));
+    box-shadow: 0 1rem 2rem rgba($color-black, .25);
 }
 
 nav ul li {
