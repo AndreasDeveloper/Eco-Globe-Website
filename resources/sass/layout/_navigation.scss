@@ -2,8 +2,136 @@
 /* NAVIGATION
 /* ------------------------------------------- */
 
-// EXPERIMENTAL \\
 
+// EXPERIMENTAL 2 \\
+
+.navigation {
+    position: fixed;
+    width: 100%;
+    z-index: 9000;
+
+    &__logo-a {
+        position: fixed;
+        float: left;
+        margin: 1.6rem 3.6rem;
+        color: $color-white;
+        height: 4.5rem;
+    }
+
+    &__list {
+        list-style: none;
+        background: rgba(0,0,0,0);
+        overflow: hidden;
+        color: $color-white;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+        transition: 1s;
+    }
+
+    &__item {
+
+        border-bottom: .2rem solid transparent;
+        -webkit-transition: border-bottom 0.2s;
+        transition: border-bottom .2s;
+       
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+           border-bottom: .2rem solid $color-primary;
+        }
+    }
+
+    &__menu-icon {
+        background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.800), rgba($color-primary-dark, 0.800));
+        width: 100%;
+        font-size: 3rem;
+        text-align: right;
+        box-sizing: border-box;
+        padding: 1.5rem 2.4rem;
+        color: $color-white;
+        display: none;
+    }
+}
+
+@media(max-width: 580px) {
+
+    .navigation__logo-a {
+        position: fixed;
+        top: 0;
+        margin-top: 1.5rem;
+        height: 4rem;
+    }
+
+    .navigation__list {
+        max-height: 0px;
+        background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.800), rgba($color-primary-dark, 0.800));
+    }
+
+    .navigation__item {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 2.4rem 0;
+        text-align: center;
+    }
+
+    .navigation__menu-icon {
+        display: block;
+    }
+
+    nav.black ul {
+        background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.800), rgba($color-primary-dark, 0.800));
+    }
+
+    .showing {
+        max-height: 50em;
+    }
+
+}
+
+
+// JS PART OF THE NAVIGATION. THIS NAV WILL BE ADDED IN JS
+nav.scroll ul {
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.800), rgba($color-primary-dark, 0.800));
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: $color-white;
+    font-size: 2rem;
+}
+
+nav.scroll ul li a {
+    color: #fff;
+    border-bottom: .2rem solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+    padding-bottom: 1rem;
+}
+
+nav.scroll ul li a:hover,
+nav.scroll ul li a:active {
+    border-bottom: .2rem solid $color-white;     
+}
+
+
+
+
+
+
+
+
+
+
+// EXPERIMENTAL \\
+/*
 .navigation {
     position: fixed;
     top: 0;
@@ -11,9 +139,11 @@
     width: 100%;
     height: 10rem;
     padding: 1rem 10rem;
-    box-sizing: border-box;
     transition: .3s;
     z-index: 9000;
+
+    
+
 
     &__logo {
         padding-top: 2.2rem;
@@ -22,6 +152,9 @@
         height: 8.5rem;
         font-size: 2.4rem;
         transition: .3s;
+
+        align-items: flex-start;
+        flex: 1;
 
         &:hover {
             transform: translateY(-1.5rem) scale(1.03);
@@ -33,7 +166,9 @@
         float: right;
         margin: 0;
         padding-right: 25rem;
+
         display: flex;
+        justify-content: flex-end;
     }
 
     &__item {
@@ -48,6 +183,7 @@
         text-decoration: none;
         text-transform: uppercase;
         border-bottom: .2rem solid transparent;
+        
         -webkit-transition: border-bottom 0.2s;
         transition: border-bottom .2s;
 
@@ -55,9 +191,8 @@
             outline: none;
         }
 
-        &:hover,
-        &:active, {
-             border-bottom: .2rem solid $color-primary;     
+        &:hover {
+           border-bottom: .2rem solid $color-primary;
         }
     }
 
@@ -65,9 +200,9 @@
         text-transform: none;
     }
 }
-
+*/
 // NAV BLACK WILL BE ADDED USING JS | JS CONTENT \\
-
+/*
 .navigation.scroll {
     background: linear-gradient(to right bottom, rgba($color-primary-light, 0.700), rgba($color-primary-dark, 0.700));
     height: 10rem;
@@ -90,95 +225,5 @@
 .navigation.scroll ul li a:hover,
 .navigation.scroll ul li a:active {
     border-bottom: .2rem solid $color-white;     
-}
+}*/
 // NAV BLACK WILL BE ADDED USING JS | JS CONTENT \\
-
-
-// FIRST VERSION \\
-/*
-.navigation {
-
-    position: relative;
-    top: 0;
-    left: 0;
-
-    &__list {
-        float: right;
-        list-style: none;
-    }
-
-    &__item {
-        display: inline-block;
-        margin-top: 6.5rem;
-        margin-left: 6rem;
-        margin-right: 6rem;
-    }
-    
-    &__anchor {
-        &:link,
-        &:visited {
-            position: relative;
-            padding: .8rem 0;
-            color: $color-white;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 1.6rem;
-            border-bottom: .2rem solid transparent;
-            -webkit-transition: border-bottom 0.2s;
-            transition: border-bottom 0.2s;
-
-            &:hover,
-            &:active {
-                 border-bottom: .2rem solid $color-primary;     
-            }
-        }
-
-        &--left {
-            position: absolute;
-            right: 18rem;
-        }
-
-        &--right {
-            position: absolute;
-            left: 12rem; 
-        }
-    }
-
-    &__logo {
-        position: absolute;
-        height: 7rem;
-        top: 50%;
-        left: 45%;
-        transition: all .2s;
-
-        &:hover {
-            transform: translateY(-1.5rem) scale(1.03);
-        }
-    }
-
-    &__special-e {
-        text-transform: none;
-    }
-}
-*/
-/* Sticky Nav */ /*
-.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.50);
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    z-index: 9999;
-}
-
-.sticky .navigation li { margin-top: 18px; }
-
-.sticky .navigation li a:link,
-.sticky .navigation li a:visited {
-    padding: 16px 0;
-    color: #555;
-}
-
-.sticky .logo { display: none; }
-*/
